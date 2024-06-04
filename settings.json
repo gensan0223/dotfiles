@@ -1,0 +1,270 @@
+{
+  "[python]": {
+    "editor.formatOnType": true
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "auto-close-tag.disableOnLanguage": ["ts", "js"],
+  "bracket-pair-colorizer-2.depreciation-notice": false,
+  "chat.editor.fontSize": 10,
+  "cmake.showOptionsMovedNotification": false,
+  "code-runner.runInTerminal": true,
+  "debug.console.fontSize": 10,
+  "editor.cursorBlinking": "smooth",
+  "editor.fontSize": 10,
+  "editor.lineNumbers": "relative",
+  "editor.minimap.enabled": false,
+  "editor.quickSuggestionsDelay": 800,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.renderLineHighlightOnlyWhenFocus": true,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  },
+  "files.eol": "\n",
+  "git.openRepositoryInParentFolders": "never",
+  "git.postCommitCommand": "push",
+  "git.showCommitInput": false,
+  "github.copilot.editor.enableAutoCompletions": true,
+  "javascript.autoClosingTags": false,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "markdown.preview.fontSize": 12,
+  "open-in-browser.default": "chrome",
+  "scm.inputFontSize": 10,
+  "security.workspace.trust.untrustedFiles": "open",
+  "terminal.external.osxExec": "warp.app",
+  "terminal.integrated.enableMultiLinePasteWarning": false,
+  "terminal.integrated.fontSize": 10,
+  "typescript.autoClosingTags": false,
+  // vim
+  // im-select
+  "vim.autoSwitchInputMethod.defaultIM": "com.apple.keylayout.ABC",
+  "vim.autoSwitchInputMethod.enable": true,
+  "vim.autoSwitchInputMethod.obtainIMCmd": "/usr/bin/true",
+  "vim.autoSwitchInputMethod.switchIMCmd": "/usr/local/bin/im-select {im}",
+  // easymotion
+  "vim.easymotion": true,
+  "vim.easymotionKeys": "ashtgyneoidrwfupxmcl,.",
+  // 検索をハイライト
+  "vim.hlsearch": true,
+  // vim-keybindings
+  "vim.leader": "<space>",
+  "vim.normalModeKeyBindings": [
+    // mark
+    {
+      "before": ["<leader>", "m", "m"],
+      "after": [":", "m", "a", "r", "k", "s", "<enter>"]
+    }, //mark一覧
+    {
+      "before": ["<leader>", "m", "d"],
+      "after": [":", "d", "e", "l", "m", "a", "r", "k", "s", "!", "<enter>"]
+    }, // mark削除
+    {
+      "before": ["<leader>", "m", "D"],
+      "after": [
+        ":",
+        "d",
+        "e",
+        "l",
+        "m",
+        "a",
+        "r",
+        "k",
+        "s",
+        " ",
+        "[",
+        "A",
+        "-",
+        "Z",
+        "]",
+        "<enter>"
+      ]
+    }, // 大文字マーク削除
+    {
+      "before": ["<leader>", "T"],
+      "commands": ["workbench.action.terminal.openNativeConsole"]
+    }, // terminal表示
+    // ズーム
+    {
+      "before": ["<leader>", "-"],
+      "commands": ["workbench.action.zoomOut"]
+    }, // 縮小
+    {
+      "before": ["<leader>", "+"],
+      "commands": ["workbench.action.zoomIn"]
+    }, // 拡大
+    {
+      "before": ["<leader>", "0"],
+      "commands": ["workbench.action.zoomReset"]
+    }, // リセット
+    {
+      "after": ["<leader>", "<leader>", "2", "s", "<char>", "<char>"],
+      "before": ["s"]
+    }, // easymotion2文字->s
+    // 改行してても上下に移動
+    {
+      "after": ["g", "j"],
+      "before": ["j"]
+    },
+    {
+      "after": ["g", "k"],
+      "before": ["k"]
+    },
+    // ハイライト消す
+    {
+      "before": ["<Leader>", "z"],
+      "commands": [":noh"]
+    },
+    // 改行してもノーマルモード
+    {
+      "after": ["o", "<ESC>"],
+      "before": ["o"]
+    },
+    {
+      "after": ["O", "<ESC>"],
+      "before": ["O"]
+    },
+    // 折りたたみ
+    {
+      "commands": ["editor.foldAll"],
+      "before": ["z", "C"]
+    },
+    {
+      "commands": ["editor.unfoldAll"],
+      "before": ["z", "O"]
+    },
+    // ウィンドウ系
+    {
+      "before": ["<enter>", "<enter>"],
+      "commands": ["workbench.action.focusNextGroup"]
+    }, // 隣のウィンドウに移動
+    {
+      "before": ["<Leader>", "v"],
+      "commands": ["workbench.action.splitEditor"]
+    }, // ウィンドウ分割
+    {
+      "before": ["<Leader>", "x"],
+      "commands": ["workbench.action.closeActiveEditor"]
+    }, // ファイル閉じる
+    {
+      "before": ["<Leader>", "X"],
+      "commands": ["workbench.action.closeEditorsInGroup"]
+    }, // ウィンドウ内のファイル閉じる
+    {
+      "commands": ["workbench.action.moveEditorToNextGroup"],
+      "before": ["<Leader>", "<Right>"]
+    }, // アクティブファイルを右のウィンドウに移す
+    {
+      "commands": ["workbench.action.moveEditorToPreviousGroup"],
+      "before": ["<Leader>", "<Left>"]
+    }, // アクティブファイルを左のウィンドウに移す
+    {
+      // コマンドパレット表示
+      "before": ["<Leader>", ":"],
+      "commands": ["workbench.action.showCommands"]
+    },
+    // ファイル名検索
+    {
+      "before": ["<Leader>", "l"],
+      "commands": ["workbench.action.quickOpen"]
+    },
+    // サイドバー
+    {
+      "before": ["<Leader>", "b"],
+      "commands": ["workbench.action.toggleSidebarVisibility"]
+    },
+    {
+      "before": ["<Leader>", "e"],
+      "commands": ["workbench.view.explorer"]
+    },
+    {
+      "before": ["<Leader>", "E"],
+      "commands": ["workbench.files.action.showActiveFileInExplorer"]
+    },
+    {
+      "before": ["<Leader>", "f"],
+      "commands": ["workbench.action.findInFiles"]
+    },
+    // vscode
+    {
+      "before": ["<Leader>", "r"],
+      "commands": ["editor.action.rename"]
+    }, // シンボル変更
+    {
+      "before": ["<Leader>", "s"],
+      "commands": ["workbench.action.gotoSymbol"]
+    }, // シンボル検索
+    {
+      "before": ["<Leader>", "k"],
+      "commands": ["editor.action.goToReferences"]
+    }, // 参照を見る
+    {
+      "before": ["<Leader>", "q"],
+      "commands": ["editor.action.quickFix"]
+    }, // クイックフィックス
+    {
+      "before": ["<Leader>", "d"],
+      "commands": ["editor.action.revealDefinitionAside"]
+    }, // 定義を別ウィンドウで表示
+    {
+      "before": ["<Leader>", "D"],
+      "commands": ["editor.action.peekDefinition"]
+    }, // 定義をポップアップで見る
+    {
+      "before": ["<Leader>", "h"],
+      "commands": ["editor.action.showHover"]
+    } // ホバー表示
+  ],
+  "vim.smartRelativeLine": true,
+  "vim.sneak": true,
+  "vim.sneakReplacesF": true,
+  "vim.useSystemClipboard": true,
+  "vim.visualModeKeyBindings": [
+    // 文字→単語→括弧内→一行
+    {
+      "commands": ["editor.action.smartSelect.expand"],
+      "before": ["g", "o"]
+    },
+    {
+      "commands": ["editor.action.smartSelect.shrink"],
+      "before": ["g", "y"]
+    },
+    {
+      "after": ["g", "j"],
+      "before": ["j"]
+    },
+    {
+      "after": ["g", "k"],
+      "before": ["k"]
+    },
+    {
+      "after": ["<leader>", "<leader>", "2", "s", "<char>", "<char>"],
+      "before": ["s"]
+    },
+    {
+      "before": ["<Leader>", "l"],
+      "commands": ["workbench.action.quickOpen"]
+    }
+  ],
+
+  "vim.visualstar": true, // visualmodeで*使用可能
+  "vsicons.dontShowNewVersionMessage": true,
+  "vim.foldfix": true,
+  "vim.showMarksInGutter": true,
+  "window.zoomLevel": 1,
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#005f5f",
+    "statusBar.debuggingBackground": "#005f5f",
+    "statusBar.debuggingForeground": "#ffffff",
+    "statusBar.foreground": "#ffffff",
+    "statusBar.noFolderBackground": "#005f5f",
+    "editor.selectionBackground": "#64687fca" // 選択部分が見えづらいので追加
+  },
+  "workbench.colorTheme": "Night Owl",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.tips.enabled": false,
+  "workbench.tree.renderIndentGuides": "always"
+}
