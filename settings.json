@@ -118,6 +118,11 @@
       "before": ["<Leader>", "z"],
       "commands": [":noh"]
     },
+    // zen mode toggle
+    {
+      "before": ["<Leader>", "Z"],
+      "commands": ["workbench.action.toggleZenMode"]
+    },
     // 改行してもノーマルモード
     {
       "after": ["o", "<ESC>"],
@@ -173,7 +178,7 @@
     },
     // サイドバー
     {
-      "before": ["<Leader>", "b"],
+      "before": ["<Leader>", "u"],
       "commands": ["workbench.action.toggleSidebarVisibility"]
     },
     {
@@ -266,5 +271,8 @@
   "workbench.colorTheme": "Night Owl",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.tips.enabled": false,
-  "workbench.tree.renderIndentGuides": "always"
+  "workbench.tree.renderIndentGuides": "always",
+  "zenMode.hideLineNumbers": false,
+  "zenMode.hideStatusBar": false,
+  "zenMode.restore": false
 }
