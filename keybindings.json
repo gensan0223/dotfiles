@@ -5,7 +5,6 @@
     "command": "workbench.action.quickOpenNavigatePreviousInEditorPicker",
     "when": "inEditorsPicker && inQuickOpen"
   }, // ウィンドウグループ内のファイル表示
-
   {
     "key": "ctrl+shift+tab",
     "command": "-workbench.action.quickOpenNavigatePreviousInEditorPicker",
@@ -90,6 +89,11 @@
     "when": "filesExplorerFocus"
   },
   {
+    "key": "space e",
+    "command": "workbench.action.toggleSidebarVisibility",
+    "when": "explorerViewletFocus"
+  },
+  {
     "key": "cmd+n",
     "command": "explorer.newFile",
     "when": "filesExplorerFocus"
@@ -151,5 +155,67 @@
     "key": "ctrl+t",
     "command": "-editor.action.transposeLetters",
     "when": "textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "-cursorDown",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+p",
+    "command": "-cursorUp",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+y",
+    "command": "acceptSelectedSuggestion",
+    "when": "acceptSuggestionOnEnter && suggestWidgetHasFocusedSuggestion && suggestWidgetVisible && suggestionMakesTextEdit && textInputFocus"
+  },
+  {
+    "key": "ctrl+y",
+    "command": "workbench.action.terminal.acceptSelectedSuggestion",
+    "when": "terminalFocus && terminalHasBeenCreated && terminalIsOpen && terminalSuggestWidgetVisible || terminalFocus && terminalIsOpen && terminalProcessSupported && terminalSuggestWidgetVisible"
+  },
+  {
+    "key": "ctrl+s up",
+    "command": "workbench.action.toggleMaximizedPanel"
+  },
+  {
+    "key": "ctrl+s down",
+    "command": "workbench.action.togglePanel"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "search.action.focusNextSearchResult",
+    "when": "inSearchEditor || searchInputBoxFocus && hasSearchResult"
+  },
+  {
+    "key": "ctrl+s f",
+    "command": "workbench.action.quickOpen"
+  },
+  // terminal
+  {
+    "key": "ctrl+s w",
+    "command": "workbench.action.terminal.toggleTerminal"
+  },
+  {
+    "key": "ctrl+s c",
+    "command": "workbench.action.terminal.new"
+  },
+  {
+    "key": "ctrl+s n",
+    "command": "workbench.action.terminal.focusNext"
+  },
+  {
+    "key": "ctrl+s p",
+    "command": "workbench.action.terminal.focusPrevious"
+  },
+  {
+    "key": "ctrl+s x",
+    "command": "workbench.action.terminal.kill"
+  },
+  {
+    "key": "ctrl+s b",
+    "command": "workbench.action.toggleSidebarVisibility"
   }
 ]
