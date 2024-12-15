@@ -1,7 +1,10 @@
 astro-build.astro-vscode
 be5invis.vscode-custom-css
+eamodio.gitlens
 ecmel.vscode-html-css
 enkia.tokyo-night
+equinusocio.vsc-material-theme
+equinusocio.vsc-material-theme-icons
 formulahendry.auto-close-tag
 formulahendry.auto-rename-tag
 formulahendry.code-runner
@@ -11,6 +14,7 @@ hackrio.hackr-theme
 jdinhlife.gruvbox
 lamarcke.kanagawa-black
 metaphore.kanagawa-vscode-color-theme
+mhutchie.git-graph
 mikestead.dotenv
 mohsen1.prettify-json
 ms-azuretools.vscode-docker
@@ -27,9 +31,14 @@ sdras.night-owl
 shardulm94.trailing-spaces
 sumneko.lua
 syler.sass-indented
+tobias-z.vscode-harpoon
+usernamehw.errorlens
 vincaslt.highlight-matching-tag
 vscodevim.vim
 vue.volar
+wart.ariake-dark
+wicked-labs.wvsc-serendipity
 xabikos.javascriptsnippets
 yinfei.luahelper
 zainchen.json
+zephyrj.forest-cottage

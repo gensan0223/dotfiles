@@ -56,7 +56,7 @@
   "vim.normalModeKeyBindings": [
     {
       "before": [
-        "<leader",
+        "<leader>",
         "w"
       ],
       "command": [
@@ -221,6 +221,15 @@
       ]
     }, // ウィンドウ内のファイル閉じる
     {
+      "before": [
+        "<Leader>",
+        "/"
+      ],
+      "commands": [
+        "editor.action.commentLine"
+      ]
+    }, // ウィンドウ内のファイル閉じる
+    {
       "commands": [
         "workbench.action.moveEditorToNextGroup"
       ],
@@ -257,16 +266,6 @@
       ],
       "commands": [
         "workbench.action.quickOpen"
-      ]
-    },
-    // サイドバー
-    {
-      "before": [
-        "<Leader>",
-        "u"
-      ],
-      "commands": [
-        "workbench.action.toggleSidebarVisibility"
       ]
     },
     {
@@ -385,15 +384,6 @@
     {
       "before": [
         "<Leader>",
-        "l"
-      ],
-      "commands": [
-        "editor.action.quickFix"
-      ]
-    }, // クイックフィックス
-    {
-      "before": [
-        "<Leader>",
         "k",
         "g"
       ],
@@ -421,6 +411,128 @@
         "workbench.view.debug"
       ]
     }, // サイドバー（デバッグ）
+    // harpoon
+    {
+      "before": [
+        "ctrl+e"
+      ],
+      "commands": [
+        "vscode-harpoon.editorQuickPick"
+      ]
+    }, // quickPick
+    {
+      "before": [
+        "<Leader>",
+        "a"
+      ],
+      "commands": [
+        "vscode-harpoon.addEditor"
+      ]
+    }, // add editor
+    {
+      "before": [
+        "ctrl+h"
+      ],
+      "commands": [
+        "vscode-harpoon.editEditors"
+      ]
+    }, // edit Editors
+    {
+      "before": [
+        "space",
+        "1"
+      ],
+      "commands": [
+        "vscode-harpoon.gotoEditor1"
+      ]
+    }, // goto1
+    {
+      "before": [
+        "space",
+        "2"
+      ],
+      "commands": [
+        "vscode-harpoon.gotoEditor2"
+      ]
+    }, // goto2
+    {
+      "before": [
+        "space",
+        "3"
+      ],
+      "commands": [
+        "vscode-harpoon.gotoEditor3"
+      ]
+    }, // goto3
+    {
+      "before": [
+        "space",
+        "4"
+      ],
+      "commands": [
+        "vscode-harpoon.gotoEditor4"
+      ]
+    }, // goto4
+    {
+      "before": [
+        "space",
+        "h",
+        "1"
+      ],
+      "commands": [
+        "vscode-harpoon.addEditor1"
+      ]
+    }, // add 1
+    {
+      "before": [
+        "space",
+        "h",
+        "2"
+      ],
+      "commands": [
+        "vscode-harpoon.addEditor2"
+      ]
+    }, // add 2
+    {
+      "before": [
+        "space",
+        "h",
+        "3"
+      ],
+      "commands": [
+        "vscode-harpoon.addEditor3"
+      ]
+    }, // add 3
+    {
+      "before": [
+        "space",
+        "h",
+        "4"
+      ],
+      "commands": [
+        "vscode-harpoon.addEditor4"
+      ]
+    }, // add 4
+    {
+      "before": [
+        "<Leader>",
+        "g",
+        "c"
+      ],
+      "commands": [
+        "git.openChange"
+      ]
+    },
+    {
+      "before": [
+        "<Leader>",
+        "s",
+        "b"
+      ],
+      "command": [
+        "workbench.action.quickOpenNavigatePrevious"
+      ],
+    }
   ],
   "vim.smartRelativeLine": true,
   "vim.sneak": true,
@@ -480,16 +592,16 @@
     {
       "before": [
         "<Leader>",
-        "l"
+        "l",
+        "a"
       ],
       "commands": [
         "workbench.action.quickOpen"
       ]
-    }
+    },
   ],
   "vim.visualstar": true, // visualmodeで*使用可能
   "vim.foldfix": true,
-  "vim.showMarksInGutter": true,
   "window.zoomLevel": 1,
   "workbench.colorCustomizations": {
     "statusBar.background": "#005f5f",
@@ -499,7 +611,7 @@
     "statusBar.noFolderBackground": "#005f5f",
     "editor.selectionBackground": "#64687fca" // 選択部分が見えづらいので追加
   },
-  "workbench.colorTheme": "Kanagawa Black",
+  "workbench.colorTheme": "Serendipity Midnight",
   "workbench.tips.enabled": false,
   "workbench.tree.renderIndentGuides": "always",
   "zenMode.hideLineNumbers": false,
@@ -524,5 +636,16 @@
   "terminal.integrated.fontFamily": "UbuntuSansMono Nerd Font Mono",
   "[jsonc]": {
     "editor.defaultFormatter": "vscode.json-language-features"
-  }
+  },
+  "gitlens.gitCommands.skipConfirmations": [
+    "fetch:command",
+    "stash-push:command",
+    "switch:command"
+  ],
+  "gitlens.graph.minimap.enabled": false,
+  "vim.cursorStylePerMode.insert": "block",
+  "editor.rulers": [
+    80
+  ],
+  "workbench.statusBar.visible": false
 }
